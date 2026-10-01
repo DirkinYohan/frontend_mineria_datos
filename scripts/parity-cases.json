@@ -1,0 +1,83 @@
+[
+  {
+    "modelo": "dolar",
+    "entradas": {
+      "Dia": 1.0,
+      "Inflacion": 0.0224835707650561,
+      "Tasa_interes": 5.46308877376582
+    },
+    "esperado": 3963.6654422238717
+  },
+  {
+    "modelo": "dolar",
+    "entradas": {
+      "Dia": 251.0,
+      "Inflacion": 0.0136955802283247,
+      "Tasa_interes": 4.538383376944548
+    },
+    "esperado": 5218.675821353291
+  },
+  {
+    "modelo": "dolar",
+    "entradas": {
+      "Dia": 500.0,
+      "Inflacion": 0.0130860013451783,
+      "Tasa_interes": 5.28629139067808
+    },
+    "esperado": 6459.27674937232
+  },
+  {
+    "modelo": "glucosa",
+    "entradas": {
+      "Edad": 42.0,
+      "IMC": 13.46641386357977,
+      "Actividad_Fisica": 1.0
+    },
+    "esperado": 127.86155827214691
+  },
+  {
+    "modelo": "glucosa",
+    "entradas": {
+      "Edad": 78.0,
+      "IMC": 30.62143965057914,
+      "Actividad_Fisica": 8.0
+    },
+    "esperado": 173.43390395800108
+  },
+  {
+    "modelo": "glucosa",
+    "entradas": {
+      "Edad": 76.0,
+      "IMC": 26.004718722359858,
+      "Actividad_Fisica": 3.0
+    },
+    "esperado": 177.09798268258513
+  },
+  {
+    "modelo": "energia",
+    "entradas": {
+      "Temperatura": 28.89180538083319,
+      "Hora": 1.0,
+      "Dia_Semana": 1.0
+    },
+    "esperado": 390.8331332504634
+  },
+  {
+    "modelo": "energia",
+    "entradas": {
+      "Temperatura": 31.13636911040632,
+      "Hora": 9.0,
+      "Dia_Semana": 3.0
+    },
+    "esperado": 447.2691288741371
+  },
+  {
+    "modelo": "energia",
+    "entradas": {
+      "Temperatura": 22.829833228382,
+      "Hora": 16.0,
+      "Dia_Semana": 4.0
+    },
+    "esperado": 396.7028081516864
+  }
+]

@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/**
+ * Estilos globales.
+ *
+ * Se define el tema claro y oscuro mediante variables CSS y se adaptan los
+ * controles nativos para que la interfaz sea coherente en ambos modos.
+ */
+
+:root {
+  --background: #fafafa;
+  --foreground: #18181b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #09090b;
+    --foreground: #fafafa;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Los controles numéricos muestran la unidad en un campo aparte, por lo que se
+   ocultan las flechas del navegador para reducir ruido visual. */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+/* Foco visible consistente para navegación por teclado. */
+:focus-visible {
+  outline-offset: 2px;
+}
